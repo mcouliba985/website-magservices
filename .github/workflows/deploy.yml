@@ -33,13 +33,16 @@ jobs:
 
       - name: Deploy Next.js to cPanel Node.js app
         run: |
-          scp -o StrictHostKeyChecking=no -r ./front-office/* c2285360c@magservices-mali.org:/home/c2285360c/nodeapp/
+          scp -o StrictHostKeyChecking=no -r ./front-office/* c2285360c@magservices-mali.org:/home/c2285360c/website/
 
       - name: Restart Node.js app via SSH
         run: |
           ssh -o StrictHostKeyChecking=no c2285360c@magservices-mali.org << 'EOF'
             source ~/.bashrc
-            cd /home/c2285360c/nodeapp
+            cd /home/c2285360c/website
             npm install
-            /opt/alt/alt-nodejs18/root/usr/bin/node /home/c2285360c/nodeapp/server.js &
+            /opt/alt/alt-nodejs18/root/usr/bin/node /home/c2285360c/website/server.js &
           EOF
+
+
+# source /home/c2285360c/nodevenv/website/20/bin/activate && cd /home/c2285360c/website
