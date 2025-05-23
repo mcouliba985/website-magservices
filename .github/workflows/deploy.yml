@@ -1,4 +1,4 @@
-name: Deploy Next.js SSG to cPanel via FTP
+name: Deploy Astro SSG to cPanel via FTP
 
 on:
   push:
@@ -18,18 +18,18 @@ jobs:
         with:
           node-version: 18
 
-      - name: Build Next.js front-office
+      - name: Install dependencies and build Astro site
         working-directory: ./front-office
         run: |
           npm install
           npm run build
 
-      - name: Deploy Next.js build via FTP
+      - name: Deploy Astro build via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
           server: ftp.magservices-mali.org
           username: c2285360c
           password: CRPFNC6ws67sF7x
           protocol: ftps
-          local-dir: ./front-office/
-          server-dir: /website/
+          local-dir: ./front-office/dist/
+          server-dir: /public_html/website/front/
