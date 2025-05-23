@@ -1,4 +1,4 @@
-name: Deploy via FTP
+name: Deploy Next.js SSG to cPanel via FTP
 
 on:
   push:
@@ -6,19 +6,30 @@ on:
       - main
 
 jobs:
-  ftp-deploy:
-    name: 📦 Déploiement FTP
+  deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 📥 Récupérer le code
+      - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: 🚀 Déployer sur le FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_TARGET_DIR }}
-          protocol: ftp
+          node-version: 18
+
+      - name: Build Next.js front-office
+        working-directory: ./front-office
+        run: |
+          npm install
+          npm run build
+
+      - name: Deploy Next.js build via FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+        with:
+          server: ftp.magservices-mali.org
+          username: c2285360c
+          password: CRPFNC6ws67sF7x
+          protocol: ftps
+          local-dir: ./front-office/
+          server-dir: /public_html/website/
