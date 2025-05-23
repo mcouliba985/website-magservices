@@ -32,4 +32,4 @@ jobs:
           password: CRPFNC6ws67sF7x
           protocol: ftps
           local-dir: ./front-office/dist/
-          server-dir: /public_html/website/front/
+          server-dir: /public_html/
