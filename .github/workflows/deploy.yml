@@ -1,4 +1,4 @@
-name: Deploy Next.js dynamic + Symfony to cPanel
+name: Deploy via FTP
 
 on:
   push:
@@ -6,43 +6,19 @@ on:
       - main
 
 jobs:
-  deploy:
+  ftp-deploy:
+    name: 📦 Déploiement FTP
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: 📥 Récupérer le code
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: 🚀 Déployer sur le FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
-          node-version: 18
-
-      - name: Build Next.js
-        working-directory: ./front-office
-        run: |
-          npm install
-          npm run build
-
-      - name: Setup SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.CPANEL_SSH_KEY }}" > ~/.ssh/id_ed25519
-          chmod 600 ~/.ssh/id_ed25519
-          ssh-keyscan -H magservices-mali.org >> ~/.ssh/known_hosts
-
-      - name: Deploy Next.js to cPanel Node.js app
-        run: |
-          scp -o StrictHostKeyChecking=no -r ./front-office/* c2285360c@magservices-mali.org:/home/c2285360c/website/
-
-      - name: Restart Node.js app via SSH
-        run: |
-          ssh -o StrictHostKeyChecking=no c2285360c@magservices-mali.org << 'EOF'
-            source ~/.bashrc
-            cd /home/c2285360c/website
-            npm install
-            /opt/alt/alt-nodejs18/root/usr/bin/node /home/c2285360c/website/server.js &
-          EOF
-
-
-# source /home/c2285360c/nodevenv/website/20/bin/activate && cd /home/c2285360c/website
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          server-dir: ${{ secrets.FTP_TARGET_DIR }}
+          protocol: ftp
