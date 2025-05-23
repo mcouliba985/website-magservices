@@ -1,0 +1,27 @@
+---
+import type { GetStaticPaths } from "astro";
+import MainLayout from "../../layouts/main/Layout.astro";
+import ArticleClient from "../../components/article-react";
+
+interface Article {
+  id: number;
+  title: string;
+  content: string;
+  image?: string;
+}
+
+export async function getStaticPaths() {
+  const res = await fetch("https://back.fmed.ml/api/articles");
+  const articles: Article[] = await res.json();
+
+  return articles.map((article) => ({
+    params: { id: article.id.toString() },
+  }));
+}
+
+const { id } = Astro.params;
+---
+
+<MainLayout>
+  <ArticleClient id={id} client:load />
+</MainLayout>
