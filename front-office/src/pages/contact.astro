@@ -1,7 +1,22 @@
 ---
 import Layout from "../layouts/main/Layout.astro";
-import Counter from "../components/contact-component-react";
+import Counter from "../components/react/contact-component-react";
+import SEO from "../components/astro/SEO.astro";
+
+const seo = {
+  title: "contactez nous",
+  description: "Découvrez le rôle et l’impact de la jeunesse dans l’Islam.",
+};
+
+const pageUrl = Astro.site + Astro.url.pathname;
 ---
+
+<SEO
+  title={seo.title}
+  description={seo.description}
+  url={pageUrl}
+  type="website"
+/>
 
 <Layout>
   <h1>Bienvenue</h1>

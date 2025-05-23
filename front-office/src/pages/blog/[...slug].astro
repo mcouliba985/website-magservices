@@ -1,0 +1,68 @@
+---
+import SEO from "../../components/astro/SEO.astro";
+import { slugify } from "../../utils/slugify.ts";
+import MainLayout from "../../layouts/main/Layout.astro";
+
+export async function getStaticPaths() {
+  const res = await fetch("https://back.fmed.ml/api/articles");
+  const articles: any[] = await res.json();
+
+  // 1. Ajoute le slug à chaque article
+  const articlesWithSlugs = articles.map((a) => ({
+    ...a,
+    slug: `${a.id}-${slugify(a.title)}`,
+  }));
+
+  // 2. Retourne les chemins + props
+  return articlesWithSlugs.map(
+    ({ slug, title, hook, content, imagePath, createAt }) => ({
+      params: { slug },
+      props: { title, hook, content, imagePath, createAt },
+    })
+  );
+}
+
+const { title, hook, content, imagePath, createAt } = Astro.props;
+const pageUrl = Astro.site + Astro.url.pathname;
+---
+
+<SEO
+  title={title}
+  description={hook}
+  image={imagePath}
+  url={pageUrl}
+  type="article"
+  publishedAt={createAt}
+/>
+
+<MainLayout>
+  <h1>{title}</h1>
+  <img src={imagePath} alt={title ?? "Illustration de l'article"} />
+
+  <div>{content}</div>
+</MainLayout>
+
+<script type="application/ld+json">
+  {JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": hook,
+    "datePublished": createAt,
+    "author": {
+      "@type": "Organization",
+      "name": "FMED MALI"
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": pageUrl
+    },
+    ...(article?.imagePath && {
+      image: {
+        "@type": "ImageObject",
+        url: article.imagePath,
+        name: article.imageName
+      }
+    })
+  })}
+</script>

@@ -1,0 +1,61 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  url?: string;
+  type?: 'website' | 'article';
+  publishedAt?: string;
+  author?: string;
+}
+
+
+const {
+  title,
+  description,
+  image = '/default-image.jpg',
+  url = Astro.site + Astro.url.pathname,
+  type = 'website',
+  publishedAt,
+  author = "Mohamed Coulibaly",
+} = Astro.props;
+---
+
+<!-- Balises standard -->
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={url} />
+
+<!-- Open Graph (Facebook, LinkedIn, etc.) -->
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:type" content={type} />
+<meta property="og:url" content={url} />
+<meta property="og:image" content={image} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={image} />
+
+
+<!-- JSON-LD pour les articles -->
+{type === 'article' && publishedAt && (
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": title,
+      "description": description,
+      "image": [image],
+      "url": url,
+      "datePublished": publishedAt,
+      "author": {
+        "@type": "Person",
+        "name": author
+      }
+    })}
+  </script>
+)}
+
