@@ -1,1 +1,45 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+
+body {
+      font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2 {
+      font-family: 'Livvic', sans-serif;
+}
+
+.banner-area-two {
+      background-image: url(/img/home-two-bg.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 900px;
+      position: relative;
+}
+
+.banner-area-two::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 900px;
+      background-image: url(/img/home-two-bg2.png);
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.nav-menu-btn {
+      padding: 10px 27px;
+      color: #ffffff;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+      text-transform: capitalize;
+      background-image: linear-gradient(to right, #ff2500, #ff7100);
+      border-radius: 50px;
+      transition: 0.7s;
+}

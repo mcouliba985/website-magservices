@@ -1,0 +1,106 @@
+---
+import DesktopMenu from './DesktopMenu.astro';
+import MobileMenu from './MobileMenu.astro';
+---
+
+<script src="https://unpkg.com/alpinejs" defer></script>
+<script is:raw>
+      document.addEventListener('alpine:init', () => {
+            Alpine.data('headerSticky', () => ({
+                  scrolled: false,
+                  open: false,
+                  init() {
+                        window.addEventListener('scroll', () => {
+                              this.scrolled = window.scrollY > 50;
+                        });
+                  },
+            }));
+      });
+</script>
+
+<header
+      x-data="headerSticky"
+      x-bind:class="scrolled ? 'fixed top-0 left-0 w-full bg-white md:lg:bg-[#0049b1]  shadow-md transition duration-300 z-50' : 'relative transition duration-300'"
+      class="py-1 md:bg-[#0049b1]"
+>
+      <nav class="container mx-auto relative z-10">
+            <div class="flex px-2 justify-between items-center">
+                  <!-- Logo -->
+                  <div class="w-24 md:w-40 lg:w-1/5">
+                        <a class="hidden md:block" href="/">
+                              <img
+                                    src="/icon/logo.png"
+                                    alt="Logo MAG SERVICES"
+                                    class="w-auto h-full lg:h-20"
+                              />
+                        </a>
+                        <a class="block md:hidden" href="/">
+                              <img
+                                    src="/icon/logo-blue.png"
+                                    alt="Logo MAG SERVICES"
+                                    class="w-auto h-full lg:h-20"
+                              />
+                        </a>
+                  </div>
+
+                  <!-- Menu Desktop -->
+                  <div class="hidden md:flex justify-center w-4/6">
+                        <DesktopMenu />
+                  </div>
+
+                  <!-- Bouton Contact (Desktop) -->
+                  <div class="hidden md:block lg:w-1/5 text-right">
+                        <a
+                              href="/contact"
+                              class="nav-menu-btn bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-primary-dark transition"
+                        >
+                              <i class="fab fa-whatsapp"></i>
+                              <span class="md:hidden lg:inline">WhatsApp</span>
+                        </a>
+                  </div>
+
+                  <!-- Hamburger Button (Mobile) -->
+                  <div class="md:hidden">
+                        <button
+                              @click="open = !open"
+                              :aria-expanded="open.toString()"
+                              aria-controls="mobile-menu"
+                              aria-label="Ouvrir le menu"
+                              class="text-[#0049b1] focus:outline-none focus:ring-2 focus:ring-white transition"
+                        >
+                              <svg
+                                    x-show="!open"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-8 w-8"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                              >
+                                    <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M4 6h16M4 12h16M4 18h16"></path>
+                              </svg>
+                              <svg
+                                    x-show="open"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-8 w-8"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                              >
+                                    <path
+                                          stroke-linecap="round"
+                                          stroke-linejoin="round"
+                                          stroke-width="2"
+                                          d="M6 18L18 6M6 6l12 12"></path>
+                              </svg>
+                        </button>
+                  </div>
+            </div>
+
+            <!-- Menu Mobile -->
+            <MobileMenu />
+      </nav>
+</header>

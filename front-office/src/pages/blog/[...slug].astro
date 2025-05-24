@@ -41,28 +41,3 @@ const pageUrl = Astro.site + Astro.url.pathname;
 
   <div>{content}</div>
 </MainLayout>
-
-<script type="application/ld+json">
-  {JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": title,
-    "description": hook,
-    "datePublished": createAt,
-    "author": {
-      "@type": "Organization",
-      "name": "FMED MALI"
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": pageUrl
-    },
-    ...(article?.imagePath && {
-      image: {
-        "@type": "ImageObject",
-        url: article.imagePath,
-        name: article.imageName
-      }
-    })
-  })}
-</script>

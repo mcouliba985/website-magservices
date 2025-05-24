@@ -1,0 +1,27 @@
+---
+import NavLink from '../../components/astro/NavLink.astro';
+---
+
+<ul
+      class="nav-menu flex gap-8 md:justify-end lg:justify-center font-medium md:text-[12px] lg:text-base xl:text-xl text-white"
+>
+      <li>
+            <NavLink href="/" class="hover:text-primary transition">Accueil</NavLink>
+      </li>
+
+      <li>
+            <a href="/services" class="hover:text-primary transition">Services</a>
+      </li>
+      <li>
+            <a href="/realisations" class="hover:text-primary transition">Réalisations</a>
+      </li>
+      <li>
+            <a href="/a-propos" class="hover:text-primary transition">À propos</a>
+      </li>
+      <li>
+            <a href="/blog" class="hover:text-primary transition">Blog</a>
+      </li>
+      <li>
+            <NavLink href="/contact" class="hover:text-primary transition">Contact</NavLink>
+      </li>
+</ul>
