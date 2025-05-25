@@ -1,0 +1,47 @@
+[
+      {
+            "id": 4,
+            "fullName": "Dr. Bamba Souleymane",
+            "poste": "Président de FONSEJ",
+            "message": "Cette campagne ne concerne pas seulement FMED. Elle nous concerne tous. Investir dans les femmes rurales, c’est bâtir un Mali plus juste, plus stable et plus prospère.",
+            "imageName": "Bamba-Souleymane-6827371a9e6e6.jpg",
+            "imagePath": "https://back.fmed.ml//uploads/testimonials/Bamba-Souleymane-6827371a9e6e6.jpg",
+            "createAt": "2025-05-16 13:01:14"
+      },
+      {
+            "id": 3,
+            "fullName": "M. Traoré Oumar",
+            "poste": "Directeur de coordination Orange",
+            "message": "Ce partenariat prouve que le secteur privé a un rôle essentiel dans le développement. Nous sommes fiers de faire partie d’une initiative qui donne du pouvoir aux jeunes par le biais du numérique",
+            "imageName": "transtion-malienne-ceremonie-funeraire-obseques-adjudant-oumar-traore-douglas-morts-hommage-deces-cheick-oumar-tounkara-682734b9869cc.jpg",
+            "imagePath": "https://back.fmed.ml//uploads/testimonials/transtion-malienne-ceremonie-funeraire-obseques-adjudant-oumar-traore-douglas-morts-hommage-deces-cheick-oumar-tounkara-682734b9869cc.jpg",
+            "createAt": "2025-05-16 12:51:05"
+      },
+      {
+            "id": 2,
+            "fullName": "Awa Diarra",
+            "poste": " entrepreneure de Ségou",
+            "message": "Grâce à FMED et au FONSEJ, j’ai pu transformer ma petite production de savon en une vraie PME. Je suis ravie que d’autres jeunes aient cette chance.",
+            "imageName": "419736445-3967219546838676-6990880601333693702-n-6827326bcd384.jpg",
+            "imagePath": "https://back.fmed.ml//uploads/testimonials/419736445-3967219546838676-6990880601333693702-n-6827326bcd384.jpg",
+            "createAt": "2025-05-16 12:41:15"
+      },
+      {
+            "id": 1,
+            "fullName": " M. Jacques CAMARA",
+            "poste": "Chef de Division Defense et la protection Sociale de la Direction Regionale du Developpement Social et Solidaire.",
+            "message": "Je suis profondément enchanté par ce à quoi je viens d'assister. Notre action d'aujourd'hui a ciblé les populations déplacées internes qui comptent aussi en son sein des personnes âgées et des handicapés physiques. Toutes ces catégories sont aussi fragiles que vulnérables. Nous tenons à remercier la FMED pour toutes ses actions durant ce mois de ramadan synonyme de solidarité et d'entraide",
+            "imageName": "t-68272ebcc6330.jpg",
+            "imagePath": "https://back.fmed.ml//uploads/testimonials/t-68272ebcc6330.jpg",
+            "createAt": "2025-05-16 12:25:32"
+      },
+      {
+            "id": 5,
+            "fullName": " Aliou Diop",
+            "poste": "Chef de Division Defense et la protection Sociale de la Direction Regionale du Developpement Social et Solidaire.",
+            "message": "Je suis profondément enchanté par ce à quoi je viens d'assister. Notre action d'aujourd'hui a ciblé les populations déplacées internes qui comptent aussi en son sein des personnes âgées et des handicapés physiques. Toutes ces catégories sont aussi fragiles que vulnérables. Nous tenons à remercier la FMED pour toutes ses actions durant ce mois de ramadan synonyme de solidarité et d'entraide",
+            "imageName": "t-68272ebcc6330.jpg",
+            "imagePath": "https://senego.com/wp-content/uploads/2025/01/img-20250128-wa0078-768x1024.jpg",
+            "createAt": "2025-05-16 12:25:32"
+      }
+]

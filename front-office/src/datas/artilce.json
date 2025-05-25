@@ -1,0 +1,30 @@
+[
+      {
+            "id": 1,
+            "image": "https://www.robotique.tech/wp-content/uploads/2022/12/maison_intelligente.jpg",
+            "title": "La maison de la technologie est devant vous",
+            "createdAt": "01 avril 2025",
+            "category": "Marketing"
+      },
+      {
+            "id": 2,
+            "image": "/img/furqan_logo_2 (2).jpg",
+            "title": "Nouvelle fonctionnalites pour l’application FURQAN",
+            "createdAt": "01 avril 2025",
+            "category": "Application"
+      },
+      {
+            "id": 3,
+            "image": "https://static.techno-science.net/illustration/Libre/2025/04/04/c17dbff0-48ae-47af-b801-515984997792.jpg",
+            "title": "Comment l'IA va permettre de mieux anticiper les prochaines pandémies",
+            "createdAt": "01 avril 2025",
+            "category": "IA"
+      },
+      {
+            "id": 4,
+            "image": "https://www.freelance-informatique.fr/images/actualites/developpeur-web-tout-savoir-sur-ce-metier-tres-recherche.jpg",
+            "title": "Qu’est-ce qu’un développeur web ?",
+            "createdAt": "01 avril 2025",
+            "category": "Developpement"
+      }
+]

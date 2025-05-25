@@ -151,3 +151,34 @@ h2 {
       bottom: 90px;
       z-index: 3;
 }
+
+.testimonial-content {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      border: 1px solid #274ba1;
+      overflow: hidden;
+}
+
+.testimonial-content:hover .see-more-btn {
+      opacity: 1;
+      visibility: visible;
+}
+
+.see-more-btn {
+      position: absolute;
+      bottom: 80px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #274ba1;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-weight: 400;
+      font-size: 16px;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.3s ease;
+      z-index: 10;
+}
