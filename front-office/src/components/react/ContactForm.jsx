@@ -10,7 +10,7 @@ const ContactForm = () => {
                                     Nos contact
                               </h2>
                               <p className="mb-2 flex items-center">
-                                    <i class="fas fa-envelope me-2"></i>
+                                    <i className="fas fa-envelope me-2"></i>
                                     <a
                                           href="mailto:contact@magservices-mail.org"
                                           target="_blank"
@@ -21,7 +21,7 @@ const ContactForm = () => {
                                     </a>
                               </p>
                               <p className="mb-2 flex items-center">
-                                    <i class="fab fa-whatsapp me-2"></i>
+                                    <i className="fab fa-whatsapp me-2"></i>
                                     <a
                                           href="https://wa.me/22374954352"
                                           target="_blank"
@@ -32,7 +32,7 @@ const ContactForm = () => {
                                     </a>
                               </p>
                               <p className="mb-2 flex items-center">
-                                    <i class="fas fa-comment-sms me-2"></i>
+                                    <i className="fas fa-comment-sms me-2"></i>
                                     <a
                                           href="https://wa.me/22374954352"
                                           target="_blank"
@@ -43,13 +43,8 @@ const ContactForm = () => {
                                     </a>
                               </p>
                               <p className="mb-2 flex items-center">
-                                    <i class="fas fa-map-location-dot me-2"></i>
-                                    <span
-                                          href="https://wa.me/22374954352"
-                                          target="_blank"
-                                          rel="noopener noreferrer"
-                                          className="ml-2 text-white hover:underline"
-                                    >
+                                    <i className="fas fa-map-location-dot me-2"></i>
+                                    <span className="ml-2 text-white hover:underline">
                                           Bougouba coura pres du station ORYX
                                     </span>
                               </p>

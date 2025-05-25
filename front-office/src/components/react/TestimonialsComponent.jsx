@@ -20,7 +20,7 @@ const TestimonialsComponent = () => {
 
       return (
             <section>
-                  <section className="container py-8">
+                  <section className="container">
                         <Swiper
                               modules={[Navigation, Autoplay]}
                               spaceBetween={20}

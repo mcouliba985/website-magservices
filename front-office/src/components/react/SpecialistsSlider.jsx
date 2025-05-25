@@ -24,7 +24,7 @@ export default function SpecialistsSlider() {
             <section className="py-8 px-4 text-center">
                   <Swiper
                         modules={[Autoplay]}
-                        autoplay={{ delay: 5000, disableOnInteraction: false }}
+                        autoplay={{ delay: 2500, disableOnInteraction: false }}
                         loop={true}
                         centeredSlides={true}
                         onSlideChange={(swiper) => setCenterIndex(swiper.realIndex)}
