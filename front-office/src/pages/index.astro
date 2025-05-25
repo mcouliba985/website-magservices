@@ -21,16 +21,16 @@ const pageUrl = Astro.site + Astro.url.pathname;
             <Banner />
       </div>
 
-      <div class="mb-4">
+      <div>
             <section class="container mx-auto px-4 sm:px-6 lg:px-8">
-                  <div class="py-12 lg:py-1">
+                  <div class="py-5 lg:py-1">
                         <h2
                               class="text-[#FF7700] mb-8 font-bold text-2xl sm:text-3xl md:text-4xl text-center lg:text-left"
                         >
                               Qui sommes-nous
                         </h2>
 
-                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 lg:gap-10 items-center">
                               <!-- Image avec description alternative -->
                               <div class="about-img">
                                     <img
@@ -72,20 +72,69 @@ const pageUrl = Astro.site + Astro.url.pathname;
             </section>
       </div>
 
-      <div class="service-banner">
-            <div class="container mx-auto p-8">
-                  <h2
-                        class="text-[#FF7700] mb-4 font-bold text-2xl sm:text-3xl md:text-4xl text-center lg:text-left"
-                  >
-                        Services
-                  </h2>
+      <div>
+            <div class="md:interface-banner">
+                  <div class="container mx-auto p-8">
+                        <h2
+                              class="text-[#FF7700] mb-4 font-bold text-2xl sm:text-3xl md:text-4xl text-center lg:text-left"
+                        >
+                              Services
+                        </h2>
 
-                  <p class="w-full lg:w-1/2 text-center text-[#274BA1] lg:text-4xl lg:leading-10">
-                        Nous sommes flexibles pour vous offrir le meilleur
-                  </p>
+                        <p
+                              class="w-full lg:w-1/2 text-center lg:text-start text-[#274BA1] lg:text-4xl lg:leading-10"
+                        >
+                              Nous sommes flexibles pour vous offrir le meilleur
+                        </p>
+                  </div>
+            </div>
+            <section class="container mx-auto px-4">
+                  <ServiceSlide client:load />
+            </section>
+      </div>
+
+      <div>
+            <div class="interface-banner">
+                  <div class="container mx-auto p-16">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                              <div class="flex gap-2 items-center">
+                                    <div class="project-img">
+                                          <img class="w-16" src="/img/counter (4).png" alt="" />
+                                    </div>
+                                    <div class="font-medium text-2xl">
+                                          <p>10+</p>
+                                          <h2>Experiences</h2>
+                                    </div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                    <div class="project-img">
+                                          <img class="w-16" src="/img/counter (3).png" alt="" />
+                                    </div>
+                                    <div class="font-medium text-2xl">
+                                          <p>150+</p>
+                                          <h2>Projet realisé</h2>
+                                    </div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                    <div class="project-img">
+                                          <img class="w-16" src="/img/counter (2).png" alt="" />
+                                    </div>
+                                    <div class="font-medium text-2xl">
+                                          <p>100%</p>
+                                          <h2>Clients satisfait</h2>
+                                    </div>
+                              </div>
+                              <div class="flex gap-2 items-center">
+                                    <div class="project-img">
+                                          <img class="w-16" src="/img/counter (1).png" alt="" />
+                                    </div>
+                                    <div class="font-medium text-2xl">
+                                          <p>300+</p>
+                                          <h2>Avis favorable</h2>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
             </div>
       </div>
-      <section class="container mx-auto px-4">
-            <ServiceSlide client:load />
-      </section>
 </Layout>
