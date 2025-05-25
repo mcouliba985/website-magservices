@@ -2,8 +2,6 @@
 import Layout from '../layouts/main/Layout.astro';
 import SEO from '../components/astro/SEO.astro';
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 const home = {
       title: 'Le rôle du jeune musulman',
       description: 'Découvrez le rôle et l’impact de la jeunesse dans l’Islam.',
@@ -15,7 +13,64 @@ const pageUrl = Astro.site + Astro.url.pathname;
 <SEO title={home.title} description={home.description} url={pageUrl} type="website" />
 
 <Layout>
-      <section class="banner-area-two relative">
-            <h1 class="text-3xl font-bold">Bienvenue à vous chez MAG SERVICES MALI</h1>
+      <section class="banner-area-two md:h-[1320px] lg:h-full relative">
+            <div class="container mx-auto relative z-10 py-12 px-4 sm:px-8">
+                  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <div class="banner-content">
+                              <div
+                                    class="px-3 py-2 mb-4 rounded-3xl text-white text-center bg-[#3C67CA] w-fit"
+                              >
+                                    Le meilleurs pour vous
+                              </div>
+                              <div class="mb-4">
+                                    <h2
+                                          class="text-white font-bold mb-4 text-3xl sm:text-4xl md:text-5xl leading-tight"
+                                    >
+                                          Nous sommes les <span class="text-[#FF7700]"
+                                                >architectes</span
+                                          > de votre transformation
+                                          <span class="text-[#FF7700]"> digitale.</span>
+                                    </h2>
+                                    <p class="text-white text-sm sm:text-base leading-6">
+                                          Nous sommes à vos côtés pour concevoir, développer et
+                                          déployer des solutions digitales intelligentes, adaptées à
+                                          vos ambitions.
+                                    </p>
+                              </div>
+                              <div class="py-6 flex flex-col sm:flex-row gap-4 sm:gap-8">
+                                    <a href="/contact" class="nav-menu-btn transition text-center">
+                                          <span>Contactez-nous</span>
+                                          <i class="fas fa-phone ml-2"></i>
+                                    </a>
+                                    <a
+                                          href="/contact"
+                                          class="bg-transparent transition flex items-center justify-center text-white"
+                                    >
+                                          <span>play video</span>
+                                          <i class="far fa-circle-play text-2xl ml-2"></i>
+                                    </a>
+                              </div>
+                        </div>
+                        <div class="animated-banner hidden sm:block">
+                              <img
+                                    src="/img/banner-img.png"
+                                    alt="Images"
+                                    class="max-w-full h-auto"
+                              />
+                        </div>
+                  </div>
+            </div>
+
+            <div class="md:hidden lg:block banner-bottom-shape hidden sm:block">
+                  <div class="shape shape-one" style="--delay: 0.3s;">
+                        <img src="/img/shape1.png" alt="Shape One" />
+                  </div>
+                  <div class="shape shape-two" style="--delay: 0.5s;">
+                        <img src="/img/shape2.png" alt="Shape Two" />
+                  </div>
+                  <div class="shape shape-three" style="--delay: 0.7s;">
+                        <img src="/img/shape3.png" alt="Shape Three" />
+                  </div>
+            </div>
       </section>
 </Layout>

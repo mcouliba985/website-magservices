@@ -9,12 +9,12 @@ h2 {
       font-family: 'Livvic', sans-serif;
 }
 
+/* Banner principale */
 .banner-area-two {
       background-image: url(/img/home-two-bg.png);
-      background-position: center center;
+      background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      height: 900px;
       position: relative;
 }
 
@@ -25,11 +25,30 @@ h2 {
       left: 0;
       right: 0;
       width: 100%;
-      height: 900px;
+      height: 600px;
       background-image: url(/img/home-two-bg2.png);
-      background-position: center center;
+      background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      z-index: -1;
+}
+
+/* Pour mobile : enlever les images lourdes */
+@media (max-width: 640px) {
+      .banner-area-two {
+            background-image: none;
+            background-color: #3c67ca;
+      }
+
+      .banner-area-two::before {
+            background-image: none;
+            background-color: #3c67ca;
+            height: 100%;
+      }
+
+      .banner-bottom-shape {
+            display: none;
+      }
 }
 
 .nav-menu-btn {
@@ -42,4 +61,66 @@ h2 {
       background-image: linear-gradient(to right, #ff2500, #ff7100);
       border-radius: 50px;
       transition: 0.7s;
+}
+
+/* Animation bannière */
+.animated-banner {
+      animation: floatFade 3s ease-in-out infinite;
+}
+
+@keyframes floatFade {
+      0% {
+            opacity: 0.6;
+            transform: translateY(0px);
+      }
+      50% {
+            opacity: 1;
+            transform: translateY(-10px);
+      }
+      100% {
+            opacity: 0.6;
+            transform: translateY(0px);
+      }
+}
+
+/* Animation des formes */
+@keyframes fadeInUp {
+      0% {
+            opacity: 0;
+            transform: translateY(30px);
+      }
+      100% {
+            opacity: 1;
+            transform: translateY(0);
+      }
+}
+
+.banner-bottom-shape {
+      position: relative;
+      width: 100%;
+      height: 200px;
+}
+
+.shape {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: fit-content;
+      opacity: 0;
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: var(--delay);
+}
+
+.shape-one {
+      bottom: 50px;
+      z-index: 1;
+}
+.shape-two {
+      bottom: 70px;
+      z-index: 2;
+}
+.shape-three {
+      bottom: 90px;
+      z-index: 3;
 }
