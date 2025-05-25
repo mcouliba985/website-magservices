@@ -1,0 +1,26 @@
+[
+      {
+            "id": 1,
+            "image": "/img/service (4).png",
+            "title": "Développment Web",
+            "hook": "Nous créons des sites web sur mesure : vitrines, e-commerce et plateformes dynamiques, optimisés pour la performance et l’expérience utilisateur."
+      },
+      {
+            "id": 2,
+            "image": "/img/service (3).png",
+            "title": "Application mobile",
+            "hook": "Nous développons des applications mobiles performantes et intuitives, adaptées à iOS et Android, pour répondre aux besoins de votre entreprise."
+      },
+      {
+            "id": 3,
+            "image": "/img/service (2).png",
+            "title": "Optimisation SEO",
+            "hook": "Nous optimisons votre site pour un meilleur référencement, plus de visibilité et un meilleur positionnement sur les moteurs de recherche."
+      },
+      {
+            "id": 4,
+            "image": "/img/service (1).png",
+            "title": "Social Media",
+            "hook": "Nous boostons votre présence en ligne avec des stratégies de marketing digital efficaces sur les réseaux sociaux."
+      }
+]
