@@ -28,6 +28,17 @@ h2 {
       background-repeat: no-repeat;
 }
 
+.interface-mobile-banner {
+      background-image: url(/img/counter-bg.png);
+      background-repeat: no-repeat;
+}
+
+.banner-specialiste {
+      background-image: url(/img/work-bg.png);
+      background-repeat: no-repeat;
+      background-position: center;
+}
+
 .banner-area-two::before {
       content: '';
       position: absolute;
@@ -58,6 +69,12 @@ h2 {
 
       .banner-bottom-shape {
             display: none;
+      }
+
+      .interface-mobile-banner {
+            background-image: none;
+            background-color: #3c67ca;
+            height: 100%;
       }
 }
 

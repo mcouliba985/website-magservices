@@ -1,0 +1,32 @@
+[
+      {
+            "id": 1,
+            "image": "/img/furqan_logo_2 (2).jpg",
+            "title": "FURQAN APP",
+            "hook": "Nous créons des sites web sur mesure : vitrines, e-commerce et plateformes dynamiques, optimisés pour la performance et l’expérience utilisateur."
+      },
+      {
+            "id": 2,
+            "image": "/img/shopsmali.png",
+            "title": "ShopsMali",
+            "hook": "Nous développons des applications mobiles performantes et intuitives, adaptées à iOS et Android, pour répondre aux besoins de votre entreprise."
+      },
+      {
+            "id": 3,
+            "image": "/img/fmed-mali.png",
+            "title": "FMED",
+            "hook": "Nous optimisons votre site pour un meilleur référencement, plus de visibilité et un meilleur positionnement sur les moteurs de recherche."
+      },
+      {
+            "id": 4,
+            "image": "/img/logo-esg1.jpg",
+            "title": "ESG MALI",
+            "hook": "Nous boostons votre présence en ligne avec des stratégies de marketing digital efficaces sur les réseaux sociaux."
+      },
+      {
+            "id": 5,
+            "image": "/img/icon-mafa.png",
+            "title": "MAFA GESTION",
+            "hook": "Nous boostons votre présence en ligne avec des stratégies de marketing digital efficaces sur les réseaux sociaux."
+      }
+]

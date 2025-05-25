@@ -8,7 +8,7 @@ import services from '../../datas/services.json';
 
 const ServiceSlide = () => {
       return (
-            <div className="w-full max-w-6xl mx-auto">
+            <div className="w-full px-4  mx-auto">
                   <Swiper
                         modules={[Autoplay]}
                         spaceBetween={20}
@@ -26,21 +26,21 @@ const ServiceSlide = () => {
                         loop={true}
                         className="relative p-4"
                   >
-                        {services.slice(0, 8).map((member) => {
+                        {services.slice(0, 8).map((service) => {
                               return (
-                                    <SwiperSlide key={member.id}>
+                                    <SwiperSlide key={service.id}>
                                           <div className="p-4">
                                                 <img
                                                       className="w-full h-60 pb-4"
-                                                      src={member.image}
-                                                      alt=""
+                                                      src={service.image}
+                                                      alt={service.title}
                                                 />
                                                 <h2 className="text-center pb-4 text-xl text-[#274BA1] font-bold">
-                                                      {member.title}
+                                                      {service.title}
                                                 </h2>
 
                                                 <p className="text-center text-base font-light">
-                                                      {member.hook}
+                                                      {service.hook}
                                                 </p>
                                           </div>
                                     </SwiperSlide>
