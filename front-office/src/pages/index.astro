@@ -11,22 +11,23 @@ import ArticleBlog from '../components/react/article-blog';
 import { Fragment } from 'react';
 
 const home = {
-      title: 'Le rôle du jeune musulman',
-      description: 'Découvrez le rôle et l’impact de la jeunesse dans l’Islam.',
-};
+      title: 'MAG SERVICES MALI - le meilleur Solutions numériques innovantes pour vous',
+      description:
+            'MAG SERVICES MALI est une agence technologique globale spécialisée dans la création de solutions digitales sur mesure : développement web, applications mobiles, logiciels SaaS, design UX/UI et conseil en transformation numérique.',
 
-const pageUrl = Astro.site + Astro.url.pathname;
+      image: '/img/MAG-SERVICES-MALI-2.png',
+};
 ---
 
-<SEO title={home.title} description={home.description} url={pageUrl} type="website" />
+<SEO title={home.title} description={home.description} image={home.image} type="website" />
 
 <Layout>
       <div>
             <Banner />
       </div>
 
-      <div>
-            <section class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="about-us">
+            <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                   <div class="py-5 lg:py-1">
                         <h2
                               class="text-[#FF7700] mb-8 font-bold text-2xl sm:text-3xl md:text-4xl text-center lg:text-left"
@@ -39,8 +40,8 @@ const pageUrl = Astro.site + Astro.url.pathname;
                               <div class="about-img">
                                     <img
                                           class="w-full h-auto"
-                                          src="/img/man.png"
-                                          alt="Expert de Mag Services Mali travaillant sur un projet digital"
+                                          src="/img/man.webp"
+                                          alt="Expert de MAG SERVICES MALI travaillant sur un projet digital"
                                           loading="lazy"
                                     />
                               </div>
@@ -73,10 +74,10 @@ const pageUrl = Astro.site + Astro.url.pathname;
                               </div>
                         </div>
                   </div>
-            </section>
-      </div>
+            </div>
+      </section>
 
-      <div>
+      <section id="services">
             <div class="interface-banner">
                   <div class="container mx-auto p-8">
                         <h2
@@ -95,15 +96,19 @@ const pageUrl = Astro.site + Astro.url.pathname;
             <section class="container mx-auto px-4">
                   <ServiceSlide client:load />
             </section>
-      </div>
+      </section>
 
-      <div>
+      <section>
             <div class="interface-mobile-banner">
                   <div class="container mx-auto p-8 text-white md:text-black md:p-16">
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                               <div class="flex gap-2 items-center">
                                     <div class="project-img">
-                                          <img class="w-16" src="/img/counter (4).png" alt="" />
+                                          <img
+                                                class="w-16 h-16"
+                                                src="/img/counter (4).png"
+                                                alt=""
+                                          />
                                     </div>
                                     <div class="font-medium lg:text-lg xl:text-xl">
                                           <p>10+</p>
@@ -112,7 +117,11 @@ const pageUrl = Astro.site + Astro.url.pathname;
                               </div>
                               <div class="flex gap-2 items-center">
                                     <div class="project-img">
-                                          <img class="w-16" src="/img/counter (3).png" alt="" />
+                                          <img
+                                                class="w-16 h-16"
+                                                src="/img/counter (3).png"
+                                                alt=""
+                                          />
                                     </div>
                                     <div class="font-medium lg:text-lg xl:text-xl">
                                           <p>150+</p>
@@ -121,7 +130,11 @@ const pageUrl = Astro.site + Astro.url.pathname;
                               </div>
                               <div class="flex gap-2 items-center">
                                     <div class="project-img">
-                                          <img class="w-16" src="/img/counter (2).png" alt="" />
+                                          <img
+                                                class="w-16 h-16"
+                                                src="/img/counter (2).png"
+                                                alt=""
+                                          />
                                     </div>
                                     <div class="font-medium lg:text-lg xl:text-xl">
                                           <p>100%</p>
@@ -130,7 +143,11 @@ const pageUrl = Astro.site + Astro.url.pathname;
                               </div>
                               <div class="flex gap-2 items-center">
                                     <div class="project-img">
-                                          <img class="w-16" src="/img/counter (1).png" alt="" />
+                                          <img
+                                                class="w-16 h-16"
+                                                src="/img/counter (1).png"
+                                                alt=""
+                                          />
                                     </div>
                                     <div class="font-medium lg:text-lg xl:text-xl">
                                           <p>300+</p>
@@ -140,9 +157,9 @@ const pageUrl = Astro.site + Astro.url.pathname;
                         </div>
                   </div>
             </div>
-      </div>
+      </section>
 
-      <div>
+      <section id="realisation">
             <div>
                   <div class="container mx-auto p-8">
                         <h2
@@ -161,16 +178,16 @@ const pageUrl = Astro.site + Astro.url.pathname;
             <section class="container mx-auto px-4">
                   <Project client:load />
             </section>
-      </div>
+      </section>
 
-      <div>
+      <section id="projet-with-us">
             <section class="container px-4 sm:px-6 lg:pl-12 xl:pl-20 py-8 relative">
-                  <h1
+                  <h2
                         class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-6 flex items-center gap-2"
                   >
                         <i class="fas fa-question text-orange-500"></i>
                         Comment transformer votre idée en projet digital concret avec nous ?
-                  </h1>
+                  </h2>
 
                   <div class="p-6 sm:p-8 bg-[#F8F8F8] rounded-2xl shadow-md">
                         <p
@@ -199,9 +216,9 @@ const pageUrl = Astro.site + Astro.url.pathname;
                         </a>
                   </div>
             </section>
-      </div>
+      </section>
 
-      <div>
+      <section id="specialistes">
             <div class="banner-specialiste">
                   <div class="container mx-auto p-8 relative">
                         <h2
@@ -217,9 +234,9 @@ const pageUrl = Astro.site + Astro.url.pathname;
                   </div>
                   <SpecialistsSlider client:load />
             </div>
-      </div>
+      </section>
 
-      <div>
+      <section id="clients">
             <div class="container mx-auto p-4 relative">
                   <h2
                         class="text-[#FF7700] mb-4 font-bold text-2xl sm:text-3xl md:text-4xl text-center lg:text-left"
@@ -234,9 +251,9 @@ const pageUrl = Astro.site + Astro.url.pathname;
 
                   <TestimonialsComponent client:load />
             </div>
-      </div>
+      </section>
 
-      <div>
+      <section id="blog">
             <div class="container mx-auto px-4 relative">
                   <h2
                         class="text-[#FF7700] block w-full mb-4 font-bold text-2xl sm:text-3xl md:text-4xl text-center"
@@ -250,5 +267,75 @@ const pageUrl = Astro.site + Astro.url.pathname;
 
                   <ArticleBlog client:load />
             </div>
-      </div>
+      </section>
 </Layout>
+
+<script type="application/ld+json">
+      {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "serviceType": "Développement web & mobile",
+            "provider": {
+                  "@type": "Organization",
+                  "name": "MAG SERVICES MALI",
+                  "url": "https://magservices-mali.org/"
+            },
+            "areaServed": {
+                  "@type": "Country",
+                  "name": "Mali"
+            },
+            "description": "MAG SERVICES MALI propose des solutions sur mesure en développement web, mobile, SaaS, et transformation numérique."
+      }
+</script>
+<script type="application/ld+json">
+      {
+            "@context": "https://schema.org",
+            "@type": "HowTo",
+            "name": "Comment transformer votre idée en projet digital concret avec MAG SERVICES MALI",
+            "description": "Planification, financement, développement, déploiement, suivi : découvrez comment MAG SERVICES MALI vous accompagne dans la réussite de votre projet digital.",
+            "step": [
+                  {
+                        "@type": "HowToStep",
+                        "name": "Planification",
+                        "text": "Nous analysons vos besoins et définissons les grandes lignes du projet."
+                  },
+                  {
+                        "@type": "HowToStep",
+                        "name": "Financement",
+                        "text": "Nous vous aidons à estimer le budget et trouver des solutions adaptées."
+                  },
+                  {
+                        "@type": "HowToStep",
+                        "name": "Développement",
+                        "text": "Nos développeurs conçoivent une solution digitale fonctionnelle et moderne."
+                  },
+                  {
+                        "@type": "HowToStep",
+                        "name": "Déploiement",
+                        "text": "Mise en ligne sécurisée de votre solution."
+                  },
+                  {
+                        "@type": "HowToStep",
+                        "name": "Suivi",
+                        "text": "Assistance, mise à jour et amélioration continue."
+                  }
+            ]
+      }
+</script>
+<script type="application/ld+json">
+      {
+            "@context": "https://schema.org",
+            "@type": "Blog",
+            "name": "Blog de MAG SERVICES MALI",
+            "url": "https://magservices-mali.org",
+            "description": "Blog d’actualités de MAG SERVICES MALI : tendances digitales, projets réalisés, innovations tech au Mali et en Afrique.",
+            "publisher": {
+                  "@type": "Organization",
+                  "name": "MAG SERVICES MALI",
+                  "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://magservices-mali.org/icon/MAG-SERVICES-MALI-2.png"
+                  }
+            }
+      }
+</script>

@@ -4,7 +4,7 @@ import MobileMenu from './MobileMenu.astro';
 ---
 
 <script src="https://unpkg.com/alpinejs" defer></script>
-<script is:raw>
+<script is:raw defer>
       document.addEventListener('alpine:init', () => {
             Alpine.data('headerSticky', () => ({
                   scrolled: false,

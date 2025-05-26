@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://magservices-mali.org/sitemap.xml
