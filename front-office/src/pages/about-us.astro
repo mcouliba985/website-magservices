@@ -1,0 +1,107 @@
+---
+import Layout from '../layouts/main/Layout.astro';
+import SEO from '../components/astro/SEO.astro';
+import BannerCoverPage from '../components/astro/banner-cover.astro';
+import Competence from '../components/astro/competence.astro';
+import Title from '../components/astro/title-section.astro';
+import features from '../datas/features.json';
+
+const about = {
+      title: 'A propos de MAG SERVICES MALI - le meilleur Solutions numériques innovantes pour vous',
+      description:
+            'MAG SERVICES MALI est une agence technologique globale spécialisée dans la création de solutions digitales sur mesure : développement web, applications mobiles, logiciels SaaS, design UX/UI et conseil en transformation numérique.',
+
+      image: '/img/MAG-SERVICES-MALI-2.png',
+};
+---
+
+<SEO title={about.title} description={about.description} image={about.image} type="website" />
+
+<Layout>
+      <BannerCoverPage title="A propos de nous" path="A propos de nous" />
+      <section class="container relative mx-auto px-4 mb-5">
+            <article
+                  class="grid grid-cols-1 lg:grid-cols-2"
+                  itemscope
+                  itemtype="https://schema.org/Organization"
+            >
+                  <div class="about-img-magservice w-full max-h-[500px] h-full">
+                        <img
+                              src="/icon/MAG-SERVICES-MALI-removed-bg.png"
+                              alt="Logo de l'entreprise MAG SERVICES MALI, spécialisée en création de sites web, applications et solutions SaaS"
+                              itemprop="logo"
+                              width="500"
+                              height="500"
+                              loading="lazy"
+                              class="w-full h-full lg:relative bottom-16 mx-auto"
+                        />
+                  </div>
+
+                  <div class="about-content lg:py-16" itemprop="description">
+                        <Title title="Qui sommes nous" />
+
+                        <p class="font-medium text-xl mb-8 text-center lg:text-start">
+                              <strong class="text-[#274BA1]" itemprop="name"
+                                    >MAG SERVICES MALI</strong
+                              > – 5 ans de développement qui fait la différence. On ne code pas juste
+                              des sites, on construit des expériences. Visibilité, performance, résultats.
+                        </p>
+
+                        <p class="font-light text-lg text-center lg:text-start">
+                              Depuis 5 ans, nous concevons des solutions digitales qui allient
+                              performance, esthétique et efficacité. Sites web sur mesure,
+                              applications intelligentes, SEO stratégique : chaque ligne de code est
+                              pensée pour propulser votre activité.
+                        </p>
+                  </div>
+            </article>
+            <article class="px-4 md:px-8 lg:pr-16" aria-labelledby="services-heading">
+                  <Title id="services-heading" title="Ce que nous pouvons faire pour vous" />
+
+                  <ul class="flex flex-col gap-10 mt-8" role="list">
+                        {
+                              features.map((feature) => (
+                                    // @ts-ignore
+                                    <li class="flex flex-col sm:flex-row gap-4" key={feature.id}>
+                                          <strong
+                                                class="bg-[#274BA1] rounded-xl py-3 px-5 text-white text-center w-fit sm:shrink-0"
+                                                aria-hidden="true"
+                                          >
+                                                {feature.id}
+                                          </strong>
+
+                                          <div class="flex-1">
+                                                <h3 class="text-xl md:text-2xl font-medium text-[#274BA1]">
+                                                      {feature.title}
+                                                </h3>
+                                                <hr class="border-b-2 border-[#274BA1] w-full my-2" />
+                                                <p class="text-base md:text-lg font-light leading-relaxed">
+                                                      {feature.desc}
+                                                </p>
+                                          </div>
+                                    </li>
+                              ))
+                        }
+                  </ul>
+            </article>
+      </section>
+      <article class="mb-5">
+            <Competence />
+      </article>
+</Layout>
+
+<script type="application/ld+json">
+      {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "MAG SERVICES MALI",
+            "url": "https://magservices-mali.org/",
+            "logo": "https://magservices-mali.org/icon/MAG-SERVICES-MALI-2.webp",
+            "description": "Agence digitale basée à Bamako, spécialisée en création de sites web, applications mobiles, solutions SaaS et stratégie SEO.",
+            "foundingDate": "2021",
+            "sameAs": [
+                  "https://www.facebook.com/profile.php?id=61565111768094",
+                  "https://www.linkedin.com/in/mohamed-coulibaly-38a870324/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+            ]
+      }
+</script>

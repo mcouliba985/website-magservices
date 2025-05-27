@@ -1,3 +1,7 @@
+---
+import NavLink from '../../components/astro/NavLink.astro';
+---
+
 <div
       id="mobile-menu"
       x-show="open"
@@ -9,14 +13,16 @@
       x-transition:leave-end="opacity-0 -translate-y-4"
       class="md:hidden space-y-4 bg-white text-[#0049b1] px-4 py-6 rounded-lg shadow-lg font-medium"
 >
-      <a href="/" class="block hover:text-primary transition">Home</a>
+      <NavLink href="/" class="block hover:text-primary transition">Home</NavLink>
+      <NavLink href="/about-us" class="block hover:text-primary transition">À propos</NavLink>
       <a href="/services" class="block hover:text-primary transition">Services</a>
       <a href="/realisations" class="block hover:text-primary transition">Réalisations</a>
-      <a href="/a-propos" class="block hover:text-primary transition">À propos</a>
       <a href="/blog" class="block hover:text-primary transition">Blog</a>
       <a href="/contact" class="block hover:text-primary transition">Contact</a>
       <a
-            href="/contact"
+            href="https://wa.me/22374954352"
+            target="_blank"
+            rel="noopener noreferrer"
             class="nav-menu-btn mt-4 block text-center bg-primary text-white px-4 py-2 rounded-lg shadow hover:bg-primary-dark transition h-12"
       >
             <i class="fab fa-whatsapp"></i> WhatsApp

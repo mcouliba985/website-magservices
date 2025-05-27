@@ -1,0 +1,17 @@
+[
+      {
+            "id": 1,
+            "title": "Un site web qui attire et convertit",
+            "desc": "Nous créons pour vous un site moderne, rapide et facile à naviguer, conçu pour capter l’attention de vos visiteurs et transformer chaque clic en opportunité."
+      },
+      {
+            "id": 2,
+            "title": "Des applications sur mesure qui simplifient votre quotidien",
+            "desc": "Nous développons des solutions digitales personnalisées qui automatisent vos processus, boostent votre efficacité et améliorent l’expérience de vos clients."
+      },
+      {
+            "id": 3,
+            "title": "Un référencement SEO qui fait décoller votre business",
+            "desc": "Grâce à des techniques SEO ciblées, nous augmentons votre visibilité en ligne pour attirer plus de clients et maximiser votre chiffre d’affaires."
+      }
+]

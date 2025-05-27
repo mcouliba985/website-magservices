@@ -2,6 +2,7 @@
 import Layout from '../layouts/main/Layout.astro';
 import SEO from '../components/astro/SEO.astro';
 import Banner from '../components/astro/banner.astro';
+import Competence from '../components/astro/competence.astro';
 import ServiceSlide from '../components/react/service-slide';
 import Project from '../components/react/project-component';
 import SpecialistsSlider from '../components/react/SpecialistsSlider';
@@ -99,64 +100,7 @@ const home = {
       </section>
 
       <section>
-            <div class="interface-mobile-banner">
-                  <div class="container mx-auto p-8 text-white md:text-black md:p-16">
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                              <div class="flex gap-2 items-center">
-                                    <div class="project-img">
-                                          <img
-                                                class="w-16 h-16"
-                                                src="/img/counter (4).png"
-                                                alt=""
-                                          />
-                                    </div>
-                                    <div class="font-medium lg:text-lg xl:text-xl">
-                                          <p>10+</p>
-                                          <h2>Experiences</h2>
-                                    </div>
-                              </div>
-                              <div class="flex gap-2 items-center">
-                                    <div class="project-img">
-                                          <img
-                                                class="w-16 h-16"
-                                                src="/img/counter (3).png"
-                                                alt=""
-                                          />
-                                    </div>
-                                    <div class="font-medium lg:text-lg xl:text-xl">
-                                          <p>150+</p>
-                                          <h2>Projet realisé</h2>
-                                    </div>
-                              </div>
-                              <div class="flex gap-2 items-center">
-                                    <div class="project-img">
-                                          <img
-                                                class="w-16 h-16"
-                                                src="/img/counter (2).png"
-                                                alt=""
-                                          />
-                                    </div>
-                                    <div class="font-medium lg:text-lg xl:text-xl">
-                                          <p>100%</p>
-                                          <h2>Clients satisfait</h2>
-                                    </div>
-                              </div>
-                              <div class="flex gap-2 items-center">
-                                    <div class="project-img">
-                                          <img
-                                                class="w-16 h-16"
-                                                src="/img/counter (1).png"
-                                                alt=""
-                                          />
-                                    </div>
-                                    <div class="font-medium lg:text-lg xl:text-xl">
-                                          <p>300+</p>
-                                          <h2>Avis favorable</h2>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-            </div>
+            <Competence />
       </section>
 
       <section id="realisation">

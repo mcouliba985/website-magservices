@@ -12,10 +12,18 @@ h2 {
 /* Banner principale */
 .banner-area-two {
       background-image: url(/img/home-two-bg.png);
+      height: 780px;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       position: relative;
+}
+
+.banner-area-cover {
+      background-image: url(/img/data-table-bg.png);
+      background-repeat: no-repeat;
+      position: relative;
+      height: 500px;
 }
 
 .about-img {
@@ -62,6 +70,18 @@ h2 {
       }
 
       .banner-area-two::before {
+            background-image: none;
+            background-color: #3c67ca;
+            height: 100%;
+      }
+
+      .banner-area-cover {
+            background-image: none;
+            background-color: #274ba1;
+            height: 250px;
+      }
+
+      .banner-area-cover::before {
             background-image: none;
             background-color: #3c67ca;
             height: 100%;

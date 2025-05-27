@@ -4,6 +4,11 @@ import Footer from '../footers/footer-component.astro';
 import ContactForm from '../../components/react/ContactForm';
 
 import '../../styles/global.css';
+
+const pageTitle = 'MAG SERVICES MALI – Création de sites web, apps et solutions SaaS sur mesure';
+const pageDescription =
+      'Agence tech à Bamako. Sites web performants, apps mobiles, solutions digitales sur mesure, SEO stratégique.';
+const imageURL = 'https://magservices-mali.org/icon/MAG-SERVICES-MALI-2.webp'; // Mets ici l'URL publique de ton logo
 ---
 
 <!doctype html>
@@ -11,6 +16,32 @@ import '../../styles/global.css';
       <head>
             <meta charset="UTF-8" />
             <meta name="viewport" content="width=device-width" />
+            <meta
+                  property="og:image"
+                  content="https://magservices-mali.org/icon/MAG-SERVICES-MALI-2.webp"
+            />
+            <meta
+                  name="twitter:image"
+                  content="https://magservices-mali.org/icon/MAG-SERVICES-MALI-2.webp"
+            />
+
+            <title>{pageTitle}</title>
+            <meta name="description" content={pageDescription} />
+            <meta name="robots" content="index, follow" />
+
+            <!-- Open Graph / Facebook -->
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content={pageTitle} />
+            <meta property="og:description" content={pageDescription} />
+            <meta property="og:image" content={imageURL} />
+            <meta property="og:url" content="https://magservices-mali.org/" />
+
+            <!-- Twitter -->
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:title" content={pageTitle} />
+            <meta name="twitter:description" content={pageDescription} />
+            <meta name="twitter:image" content={imageURL} />
+
             <link rel="icon" type="image/png" href="/icon/favicon-mag.png" />
             <link rel="alternate" hreflang="fr" href="https://magservices-mali.org/" />
             <meta name="generator" content={Astro.generator} />
