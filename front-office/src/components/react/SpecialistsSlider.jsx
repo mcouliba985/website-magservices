@@ -3,19 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import '../../styles/SpecialistsSlider.css';
-
-const specialists = [
-      {
-            img: '/team/mohamed.jpg',
-            name: 'Mohamed Coulibaly',
-            role: 'CEO & full stack web / mobile',
-      },
-      { img: '/team/moussa-camara.jpeg', name: 'Moussa Camara', role: 'developpeur web' },
-      { img: '/team/djibril-diarra.jpg', name: 'Djibril Diarra', role: 'developpeur web/mobile' },
-      { img: '/team/aissata-aya-diallo.jpg', name: 'Aissata Aya Diallo', role: 'Développeuse' },
-      { img: '/team/sadjo-diaoune.jpg', name: 'Sadjo Diaoune', role: 'Consultant & intervenant' },
-      { img: '/team/namory-keita.jpg', name: 'Namory Keita', role: 'intervenant' },
-];
+import specialists from '../../datas/specialists.json';
 
 export default function SpecialistsSlider() {
       const [centerIndex, setCenterIndex] = useState(2); // default center index

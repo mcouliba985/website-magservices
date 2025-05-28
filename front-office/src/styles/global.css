@@ -67,6 +67,7 @@ h2 {
       .banner-area-two {
             background-image: none;
             background-color: #3c67ca;
+            height: 530px;
       }
 
       .banner-area-two::before {

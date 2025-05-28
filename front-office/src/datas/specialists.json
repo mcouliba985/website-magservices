@@ -1,0 +1,32 @@
+[
+      {
+            "img": "/team/mohamed.webp",
+            "name": "Mohamed Coulibaly",
+            "role": "CEO de FURQAN chef de projet & developpeur full stack web / mobile"
+      },
+      {
+            "img": "/team/moussa-camara.webp",
+            "name": "Moussa Camara",
+            "role": "Promoteur de ShopsMali & Developpeur d'applications"
+      },
+      {
+            "img": "/team/djibril-diarra.webp",
+            "name": "Djibril Diarra",
+            "role": "developpeur web app"
+      },
+      {
+            "img": "/team/aissata-aya-diallo.webp",
+            "name": "Aissata Aya Diallo",
+            "role": "Développeuse web"
+      },
+      {
+            "img": "/team/sadjo-diaoune.webp",
+            "name": "Sadjo Diaoune",
+            "role": "Consultant & intervenant"
+      },
+      {
+            "img": "/team/namory-keita.webp",
+            "name": "Namory Keita",
+            "role": "intervenant"
+      }
+]

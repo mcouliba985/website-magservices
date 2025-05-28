@@ -1,0 +1,32 @@
+[
+      {
+            "id": "expertise",
+            "titre": "Un réseau mondial d’experts",
+            "icon": "fab fa-keycdn",
+            "contenu": "Nous rassemblons les meilleurs talents digitaux, répartis aux quatre coins du monde — des développeurs aux designers, en passant par les spécialistes SEO et chefs de projet. Cette diversité géographique et culturelle nous permet d’apporter des solutions innovantes, adaptées à différents marchés et contextes. Grâce à cette organisation décentralisée, nous bénéficions d’une grande flexibilité et d’une capacité à répondre rapidement à vos besoins, peu importe où vous êtes."
+      },
+      {
+            "id": "sur-mesure",
+            "titre": "Des solutions 100% sur mesure",
+            "icon": "fas fa-network-wired",
+            "contenu": "Chez MAG SERVICES MALI, nous savons qu’aucun projet ne ressemble à un autre. C’est pourquoi nous ne proposons jamais de solutions toutes faites. À la place, nous analysons attentivement votre activité, vos objectifs, votre budget et votre environnement concurrentiel pour vous offrir une stratégie digitale parfaitement adaptée. Chaque élément – design, développement, fonctionnalités – est pensé pour répondre précisément à vos besoins et valoriser votre marque."
+      },
+      {
+            "id": "flexibilite",
+            "titre": "Flexibilité et réactivité",
+            "icon": "fas fa-earth-asia",
+            "contenu": "Grâce à notre structure décentralisée et notre réseau d’experts répartis dans plusieurs pays, nous sommes disponibles à tout moment, quel que soit votre fuseau horaire. Cette organisation nous permet de répondre rapidement à vos demandes, d’adapter notre rythme de travail au vôtre, et d’avancer avec agilité sur chaque étape du projet. Vous bénéficiez d’une équipe réactive, connectée et toujours prête à s’adapter à vos priorités."
+      },
+      {
+            "id": "qualite",
+            "titre": "Qualité professionnelle garantie",
+            "icon": "fas fa-file-contract",
+            "contenu": "Chez MAG SERVICES MALI, nous réunissons le meilleur des deux mondes : la rigueur et les standards élevés d’une agence structurée, associés à l’agilité, la créativité et la souplesse du freelancing. Chaque livrable est soigneusement contrôlé, testé et validé pour garantir sa performance, sa sécurité et sa compatibilité avec vos objectifs. Vous avez ainsi l’assurance de résultats concrets, durables et hautement professionnels."
+      },
+      {
+            "id": "innovation",
+            "titre": "Une vision tournée vers l’innovation",
+            "icon": "far fa-eye",
+            "contenu": "L’univers digital évolue sans cesse, et nous évoluons avec lui. Chez MAG SERVICES MALI, nous intégrons les dernières technologies, tendances UX/UI et outils de développement pour créer des solutions modernes, performantes et durables. Notre veille constante nous permet d’anticiper les évolutions du marché et d’assurer à nos clients des projets à forte valeur ajoutée, prêts pour le futur."
+      }
+]

@@ -4,6 +4,7 @@ import SEO from '../components/astro/SEO.astro';
 import BannerCoverPage from '../components/astro/banner-cover.astro';
 import Competence from '../components/astro/competence.astro';
 import Title from '../components/astro/title-section.astro';
+import Avantages from '../components/react/avantages';
 import features from '../datas/features.json';
 
 const about = {
@@ -88,6 +89,10 @@ const about = {
       <article class="mb-5">
             <Competence />
       </article>
+      <article class="container mx-auto px-4 mb-8">
+            <Title title="Pourquoi nous" />
+            <Avantages client:load />
+      </article>
 </Layout>
 
 <script type="application/ld+json">
@@ -98,7 +103,7 @@ const about = {
             "url": "https://magservices-mali.org/",
             "logo": "https://magservices-mali.org/icon/MAG-SERVICES-MALI-2.webp",
             "description": "Agence digitale basée à Bamako, spécialisée en création de sites web, applications mobiles, solutions SaaS et stratégie SEO.",
-            "foundingDate": "2021",
+            "foundingDate": "2020",
             "sameAs": [
                   "https://www.facebook.com/profile.php?id=61565111768094",
                   "https://www.linkedin.com/in/mohamed-coulibaly-38a870324/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"

@@ -53,9 +53,12 @@ const ContactForm = () => {
                         {/* Formulaire de contact */}
                         <div className="bg-white p-6 md:p-8 rounded-xl shadow-xl mt-[-60px] z-20">
                               <h3 className="text-gray-800 font-semibold text-lg mb-1">
-                                    Remplissez le formulaire de contact
+                                    Remplissez le formulaire de contact et envoyez nous.
                               </h3>
-                              <p className="text-gray-500 mb-6">et envoyez nous.</p>
+                              <strong className="text-red-500 mb-8">
+                                    Contactez nous via whatsapp pour le moment, le site est en
+                                    maintenance
+                              </strong>
                               <form className="space-y-5">
                                     <div className="flex flex-col md:flex-row gap-4">
                                           <input
