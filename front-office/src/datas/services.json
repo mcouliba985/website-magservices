@@ -3,24 +3,559 @@
             "id": 1,
             "image": "/img/service (4).png",
             "title": "Développment Web",
-            "hook": "Nous créons des sites web sur mesure : vitrines, e-commerce et plateformes dynamiques, optimisés pour la performance et l’expérience utilisateur."
+            "hook": "Nous créons des sites web sur mesure : vitrines, e-commerce et plateformes dynamiques, optimisés pour la performance et l’expérience utilisateur.",
+            "slug": "service-developpement-web-mag-services-mali",
+            "keywords": [
+                  "développement web",
+                  "création site internet professionnel",
+                  "site vitrine entreprise internationale",
+                  "agence web Afrique francophone",
+                  "site e-commerce responsive",
+                  "conception de site optimisé SEO"
+            ],
+            "description": "Nous développons des sites internet performants, adaptés aux standards internationaux, pour les entreprises africaines ou internationales. Que vous soyez une PME locale ou une organisation à l’échelle mondiale, MAG SERVICES MALI conçoit des plateformes sur mesure, rapides, sécurisées et optimisées pour les moteurs de recherche.",
+            "types": [
+                  {
+                        "id": 1,
+                        "title": "Site Présence & information",
+                        "image": "/services/presence.webp",
+                        "hook": "Qu’est-ce qu’un Site Présence & Information ?",
+                        "content": "Dans un monde de plus en plus connecté, ne pas exister sur Internet, c’est comme ne pas exister du tout. Le Site Présence & Information est la vitrine digitale idéale pour toute structure moderne : entreprise, association ou indépendant. Il présente clairement qui vous êtes, ce que vous faites, et permet aux visiteurs de vous contacter facilement.Bien plus qu’un simple site, il renforce votre crédibilité, inspire confiance et agit comme un commercial disponible 24h/24. Il accueille les visiteurs, transmet les bonnes informations et vous connecte à vos futurs clients. Aujourd’hui, plus de 90% des consommateurs vérifient la présence en ligne d’une entreprise avant de la contacter. Avoir un site, c’est se rendre visible, rassurer, se démarquer de la concurrence et gagner la confiance dès le premier clic.",
+                        "keywords": [
+                              "site vitrine professionnel",
+                              "présence digitale internationale",
+                              "création site pour PME",
+                              "site web pour startup",
+                              "site institutionnel",
+                              "développement site responsive"
+                        ],
+                        "description": "Chez MAG SERVICES MALI, nous créons des sites de présence professionnelle adaptés à toutes tailles d’organisation : entreprises, ONG, collectivités ou projets. Nos sites sont rapides, optimisés pour les moteurs de recherche et conçus pour donner une image fiable à l’international.",
+                        "objectifs": [
+                              "Présenter l'identité et les activités de l'entreprise ou de l'organisation",
+                              "Informer les visiteurs de manière claire et structurée",
+                              "Créer une présence professionnelle sur Internet",
+                              "Faciliter la prise de contact et renforcer la crédibilité"
+                        ],
+                        "public_cible": [
+                              "Petites entreprises",
+                              "Artisans et commerçants",
+                              "Cabinets et professions libérales",
+                              "ONG et associations",
+                              "Projets et événements",
+                              "Institutions publiques ou collectivités"
+                        ],
+
+                        "incluses": [
+                              "Design responsive (adapté mobile, tablette, ordinateur)",
+                              "Optimisation SEO de base",
+                              "Nom de domaine + Hébergement + SSL (HTTPS)",
+                              "Back-office simple ou mise à jour assistée",
+                              "Formation ou documentation de prise en main"
+                        ],
+                        "avantages": [
+                              "Présence digitale 24h/24",
+                              "Meilleure crédibilité auprès des partenaires et clients",
+                              "Centralisation des infos importantes",
+                              "Évolutif vers des solutions plus complexes"
+                        ]
+                  },
+                  {
+                        "id": 2,
+                        "title": "Site Institutionnel / Gouvernemental",
+                        "image": "/services/gouvernemant.webp",
+                        "hook": "Pourquoi un site institutionnel est-il essentiel ?",
+                        "content": "Un site institutionnel est bien plus qu’une simple présence sur le web. C’est un outil stratégique de communication pour valoriser l’image, les missions et les actions d’une organisation publique ou privée. Il permet de renforcer la transparence, diffuser les informations officielles et dialoguer avec les citoyens, partenaires ou bénéficiaires.Accessible à tout moment, il centralise les actualités, publications, appels d’offres, projets en cours et contacts utiles. Il sert également de passerelle entre l’institution et son public, en apportant des réponses claires et fiables. À l’heure du numérique, ne pas disposer d’un site institutionnel limite considérablement la portée et l’impact des actions menées. C’est pourquoi toute institution moderne se doit d’avoir un site bien conçu, à jour, responsive et conforme aux normes de sécurité et d’accessibilité.",
+                        "keywords": [
+                              "site gouvernemental Afrique",
+                              "portail institutionnel",
+                              "site web ministère",
+                              "communication digitale publique",
+                              "transparence institutionnelle",
+                              "développement site pour collectivité"
+                        ],
+                        "description": "Nous concevons des sites institutionnels conformes aux normes internationales d’accessibilité et de transparence. Idéal pour les gouvernements, agences publiques et institutions opérant à l’échelle nationale ou régionale, en Afrique ou ailleurs.",
+                        "objectifs": [
+                              "Informer les citoyens de manière officielle et fiable",
+                              "Présenter les missions, organigrammes, textes légaux et décisions",
+                              "Offrir un accès simplifié aux documents administratifs et services publics",
+                              "Renforcer la transparence et la confiance"
+                        ],
+                        "public_cible": [
+                              "Citoyens",
+                              "Administrations partenaires",
+                              "Journalistes et acteurs institutionnels",
+                              "Entreprises et associations"
+                        ],
+                        "incluses": [
+                              "Structure conforme aux normes d’accessibilité",
+                              "Publication d’actualités et communiqués",
+                              "Téléchargement de documents (PDF, arrêtés, appels d’offre)",
+                              "Organigramme et informations sur les directions",
+                              "Module de contact ou doléances citoyennes"
+                        ],
+                        "avantages": [
+                              "Crédibilité renforcée",
+                              "Communication transparente",
+                              "Accessibilité aux services publics",
+                              "Respect des obligations réglementaires"
+                        ]
+                  },
+                  {
+                        "id": 3,
+                        "title": "Site Contenu éditorial & média",
+                        "image": "/services/service-media.webp",
+                        "hook": "Créez un média numérique qui informe, engage et fidélise.",
+                        "content": "Un site de web média est bien plus qu’un simple espace d’information : c’est une plateforme dynamique qui informe, engage et fidélise votre audience. Il vous permet de publier des articles, des vidéos, des interviews, des podcasts ou encore des reportages de manière structurée et professionnelle.Grâce à une interface intuitive, un design moderne et des fonctionnalités interactives (commentaires, partages, newsletter), vous créez une véritable communauté autour de votre contenu. Un bon site média renforce votre crédibilité, améliore votre référencement naturel (SEO) et multiplie les points de contact avec vos lecteurs. Il devient un canal d’expression, un levier d’influence et une source de revenus si vous y intégrez la publicité ou des contenus sponsorisés. En résumé : un outil incontournable pour toute organisation ou collectif souhaitant exister dans l’univers numérique de l’information.",
+                        "keywords": [
+                              "site d’actualités en ligne",
+                              "média digital Afrique",
+                              "plateforme éditoriale web",
+                              "journal numérique international",
+                              "blog professionnel multilingue",
+                              "site d’information francophone"
+                        ],
+                        "description": "Pour les médias numériques, blogueurs ou créateurs de contenu, nous construisons des sites dynamiques capables de diffuser de l'information à l'échelle globale. Nos plateformes sont conçues pour un référencement optimal et la fidélisation de l’audience.",
+                        "objectifs": [
+                              "Diffuser des contenus éditoriaux variés (articles, vidéos, podcasts)",
+                              "Créer une audience fidèle",
+                              "Valoriser les productions journalistiques ou culturelles",
+                              "Monétiser via publicité, abonnement ou contenus premium"
+                        ],
+                        "public_cible": [
+                              "Lecteurs réguliers",
+                              "Communautés autour d’un thème",
+                              "Public intéressé par l’actualité ou la culture",
+                              "Annonceurs"
+                        ],
+                        "incluses": [
+                              "Gestion de catégories, tags, auteurs",
+                              "Lecteur vidéo/audio intégré",
+                              "Commentaires ou réactions des lecteurs",
+                              "Espace abonnés ou contenus premium",
+                              "Système de newsletter"
+                        ],
+                        "avantages": [
+                              "Visibilité accrue sur Google et réseaux sociaux",
+                              "Monétisation via pubs ou abonnements",
+                              "Outil d’influence et de visibilité",
+                              "Publication rapide de l’information"
+                        ]
+                  },
+                  {
+                        "id": 4,
+                        "title": "Site Commerce & Transaction",
+                        "image": "/services/service-ecommerce.webp",
+                        "hook": "Vendez vos produits ou services en ligne 24h/24, 7j/7.",
+                        "content": "Un site e-commerce vous permet de vendre vos produits ou services en ligne, 24h/24 et 7j/7, sans interruption. Il transforme votre boutique physique ou votre activité en un espace accessible à tous, partout dans le monde. Grâce à un catalogue bien structuré, un panier sécurisé et un système de paiement en ligne, vos clients peuvent commander en quelques clics, à tout moment.Un bon site de vente en ligne optimise l’expérience utilisateur, renforce votre image de marque et augmente vos ventes. Vous pouvez suivre vos commandes, gérer vos stocks, proposer des promotions et fidéliser votre clientèle via des newsletters ou des comptes clients. C’est l’outil idéal pour développer votre activité, élargir votre audience et automatiser une grande partie de votre processus commercial. Ne ratez plus une seule vente : passez au digital.",
+                        "keywords": [
+                              "site e-commerce international",
+                              "vente en ligne Afrique",
+                              "boutique en ligne mobile-friendly",
+                              "paiement sécurisé web",
+                              "catalogue produits en ligne",
+                              "site marchand Afrique francophone"
+                        ],
+                        "description": "Nous concevons des sites e-commerce qui permettent aux marques africaines de vendre dans le monde entier. Intégration de paiement sécurisé (Mobile Money, carte bancaire), gestion de produits et tunnel de commande UX-friendly.",
+                        "objectifs": [
+                              "Permettre l’achat en ligne de produits ou services",
+                              "Automatiser la gestion des commandes et paiements",
+                              "Élargir sa clientèle au-delà de sa zone géographique",
+                              "Réduire les coûts d’intermédiaires"
+                        ],
+                        "public_cible": [
+                              "Clients particuliers",
+                              "Entreprises (B2B)",
+                              "Commerçants et artisans",
+                              "Revendeurs"
+                        ],
+                        "incluses": [
+                              "Catalogue produit avec images et variantes",
+                              "Panier d’achat et tunnel de commande",
+                              "Paiement sécurisé (Mobile Money, carte, etc.)",
+                              "Suivi de commande et espace client",
+                              "Statistiques de ventes"
+                        ],
+                        "avantages": [
+                              "Boutique ouverte 24/7",
+                              "Réduction des coûts de structure",
+                              "Automatisation des ventes",
+                              "Augmentation du chiffre d'affaires"
+                        ]
+                  },
+                  {
+                        "id": 5,
+                        "title": "Site Interaction & Communauté",
+                        "image": "/services/service-communaute.webp",
+                        "hook": "Fédérez une communauté autour de vos valeurs ou projets.",
+                        "content": "Un site communautaire est l’outil idéal pour rassembler des personnes autour de vos valeurs, causes ou projets. Que vous soyez une association, un collectif, un mouvement citoyen ou une organisation sociale, ce type de site vous permet de créer du lien, mobiliser, et faire grandir votre impact.Il offre un espace d’échange et d’information où les membres peuvent suivre l’actualité, participer à des actions, s’inscrire à des événements ou contribuer à des discussions. Vous pouvez y intégrer des formulaires d’adhésion, des forums, des appels aux dons, ou encore des espaces réservés aux membres. En fédérant votre communauté autour d’un site bien conçu, vous renforcez l’engagement, valorisez vos actions et donnez à votre mission une visibilité durable. Créez une dynamique collective, visible et accessible à tous, grâce au numérique.",
+                        "keywords": [
+                              "plateforme communautaire web",
+                              "création de réseau social niche",
+                              "site collaboratif Afrique",
+                              "espace membre interactif",
+                              "site d’échange et d’engagement",
+                              "communauté en ligne internationale"
+                        ],
+                        "description": "Nos plateformes communautaires permettent aux utilisateurs de se connecter, collaborer et partager à travers le monde. Conçues pour favoriser la participation et la croissance organique autour d’une cause ou d’un thème commun.",
+                        "objectifs": [
+                              "Créer un espace d’échange entre membres",
+                              "Encourager la participation et l’engagement",
+                              "Faire grandir une communauté autour d’un thème ou cause",
+                              "Collecter des contributions ou idées"
+                        ],
+                        "public_cible": [
+                              "Membres d’une association ou d’un club",
+                              "Communautés thématiques",
+                              "Utilisateurs actifs et engagés",
+                              "Partenaires ou bénévoles"
+                        ],
+                        "incluses": [
+                              "Inscription / Connexion utilisateur",
+                              "Profils personnalisés",
+                              "Commentaires, likes, forums ou messagerie privée",
+                              "Groupes ou catégories thématiques",
+                              "Modération et notifications"
+                        ],
+                        "avantages": [
+                              "Dynamique participative",
+                              "Fidélisation des membres",
+                              "Valorisation de la parole de la communauté",
+                              "Croissance organique grâce à l’interaction"
+                        ]
+                  },
+                  {
+                        "id": 6,
+                        "title": "Site Services en ligne & Éducation",
+                        "image": "/services/service-education.webp",
+                        "hook": "Proposez vos formations ou services en ligne, de façon accessible et efficace.",
+                        "content": "Un site de formation ou de services en ligne vous permet de partager vos compétences, cours ou expertises avec un public plus large, de manière simple, accessible et professionnelle. Que vous soyez formateur, coach, consultant ou organisme de formation, vous pouvez proposer vos services à distance, 24h/24, via une plateforme intuitive et bien structurée.Publiez vos modules, intégrez des vidéos, quiz, certificats ou plannings. Vos utilisateurs peuvent s’inscrire, suivre les formations à leur rythme, et même payer en ligne. Ce type de site valorise votre savoir-faire, facilite la gestion de vos offres et automatise vos processus. C’est un outil puissant pour développer votre activité, élargir votre audience et générer des revenus réguliers. Passez au digital pour former, conseiller et accompagner efficacement, où que soient vos apprenants ou clients.",
+                        "keywords": [
+                              "plateforme e-learning",
+                              "site de formation en ligne",
+                              "services à distance digitalisés",
+                              "consultation en ligne",
+                              "cours virtuels multilingues",
+                              "site éducatif international"
+                        ],
+                        "description": "Formateurs, coachs, écoles : MAG SERVICES MALI vous accompagne dans la création de plateformes éducatives ou de services en ligne accessibles à l’échelle mondiale. Paiement intégré, contenus protégés, suivi automatisé.",
+                        "objectifs": [
+                              "Offrir des services à distance accessibles 24h/24",
+                              "Digitaliser la formation ou la consultation",
+                              "Automatiser l’inscription, le paiement et le suivi",
+                              "Toucher un public plus large sans contrainte géographique"
+                        ],
+                        "public_cible": [
+                              "Apprenants",
+                              "Professionnels en formation continue",
+                              "Clients à la recherche de services à distance",
+                              "Écoles, formateurs, coachs, consultants"
+                        ],
+                        "incluses": [
+                              "Espace d’apprentissage (cours, vidéos, quiz, PDF)",
+                              "Système de paiement et gestion des accès",
+                              "Tableau de bord formateur/apprenant",
+                              "Planning de rendez-vous ou classes virtuelles",
+                              "Certificats ou attestations en ligne"
+                        ],
+                        "avantages": [
+                              "Éducation ou service accessible en tout temps",
+                              "Réduction des coûts logistiques",
+                              "Suivi personnalisé et automatisé",
+                              "Source de revenu évolutive"
+                        ]
+                  }
+            ]
       },
       {
             "id": 2,
             "image": "/img/service (3).png",
             "title": "Application mobile",
-            "hook": "Nous développons des applications mobiles performantes et intuitives, adaptées à iOS et Android, pour répondre aux besoins de votre entreprise."
-      },
-      {
-            "id": 3,
-            "image": "/img/service (2).png",
-            "title": "Optimisation SEO",
-            "hook": "Nous optimisons votre site pour un meilleur référencement, plus de visibilité et un meilleur positionnement sur les moteurs de recherche."
-      },
-      {
-            "id": 4,
-            "image": "/img/service (1).png",
-            "title": "Social Media",
-            "hook": "Nous boostons votre présence en ligne avec des stratégies de marketing digital efficaces sur les réseaux sociaux."
+            "hook": "Nous créons des apps mobiles sur mesure : vitrines, e-commerce et plateformes dynamiques, optimisées pour la performance et l’expérience utilisateur.",
+            "slug": "developpement-applications-mobiles-mag-services-mali",
+            "keywords": [
+                  "développement application mobile",
+                  "création application mobile sur mesure",
+                  "agence développement mobile",
+                  "application mobile iOS Android",
+                  "développeur application mobile freelance",
+                  "application mobile entreprise",
+                  "application mobile e-commerce",
+                  "application mobile UX UI",
+                  "développement application mobile native",
+                  "application mobile hybride",
+                  "meilleure agence mobile Afrique francophone",
+                  "création app mobile professionnelle"
+            ],
+            "description": "Nous développons des applications mobiles performantes, conformes aux standards internationaux, pour les entreprises africaines et internationales. Que vous soyez une startup locale ou une grande organisation, MAG SERVICES MALI conçoit des apps sur mesure, rapides, sécurisées, intuitives et parfaitement adaptées aux plateformes iOS et Android.",
+            "types": [
+                  {
+                        "id": 1,
+                        "title": "Super App (Multi-services)",
+                        "image": "/services/superapp.webp",
+                        "hook": "C’est quoi une Super App ?",
+                        "content": "Imagine une seule application qui regroupe plusieurs services essentiels pour votre public cible. Une Super App est une plateforme mobile tout-en-un qui permet aux utilisateurs d'accéder à une multitude de services — e-commerce, paiement, réservation, livraison, services publics, etc. — sans jamais quitter l’application.Cette solution est idéale pour les entreprises, collectivités ou startups qui souhaitent créer un écosystème digital complet, accessible depuis un seul point d’entrée. Elle centralise les interactions, simplifie l’expérience utilisateur et génère de la fidélité. Dans les marchés émergents, les Super Apps deviennent la norme car elles répondent à plusieurs besoins dans des contextes de faible connectivité ou d’infrastructure numérique limitée.",
+                        "keywords": [
+                              "super app mobile",
+                              "application multi-services",
+                              "développement d'écosystème digital",
+                              "app tout-en-un",
+                              "super app pour collectivités",
+                              "plateforme mobile intégrée"
+                        ],
+                        "description": "Chez MAG SERVICES MALI, nous développons des Super Apps sur mesure qui regroupent plusieurs services digitaux dans une seule interface intuitive. Adaptées aux réalités locales, nos Super Apps sont optimisées pour la performance, la simplicité d’usage et l’évolutivité.",
+                        "objectifs": [
+                              "Centraliser plusieurs services dans une seule application",
+                              "Améliorer l’accessibilité et la fluidité de l’expérience utilisateur",
+                              "Renforcer la fidélité en offrant un écosystème complet",
+                              "Créer un point d’entrée digital stratégique pour vos utilisateurs"
+                        ],
+                        "public_cible": [
+                              "Startups innovantes",
+                              "Collectivités locales ou nationales",
+                              "Groupes de presse ou médias",
+                              "Structures multiservices (banques, assurances, etc.)",
+                              "ONG avec plusieurs programmes/services",
+                              "Entreprises souhaitant digitaliser plusieurs processus internes ou externes"
+                        ],
+                        "incluses": [
+                              "Développement Android & iOS",
+                              "Interface multi-modules (services intégrés)",
+                              "Système de connexion sécurisé (OTP, biométrie)",
+                              "Back-office de gestion centralisé",
+                              "Support pour intégration API tierces (paiement, SMS, etc.)"
+                        ],
+                        "avantages": [
+                              "Plateforme unique pour plusieurs services",
+                              "Expérience utilisateur fluide et unifiée",
+                              "Réduction des coûts de développement en centralisant les fonctionnalités",
+                              "Écosystème évolutif et adapté au contexte local"
+                        ]
+                  },
+                  {
+                        "id": 2,
+                        "title": "Applications de Productivité Alimentées par l'IA",
+                        "image": "/services/ai-productivite.webp",
+                        "hook": "Comment l’IA peut-elle booster votre productivité ?",
+                        "content": "Les Applications de Productivité Alimentées par l’IA transforment la façon dont les organisations et les professionnels travaillent au quotidien. Grâce à l’intelligence artificielle, elles permettent d’automatiser des tâches répétitives, de prédire les besoins, d’analyser des données en temps réel, et même d’assister à la rédaction, la traduction ou la planification.\n Ces applications sont conçues pour améliorer la rapidité, la précision et la prise de décision. Elles s’intègrent dans vos processus existants pour vous faire gagner du temps, réduire les erreurs humaines et libérer vos équipes pour qu’elles se concentrent sur des tâches à plus forte valeur ajoutée.",
+                        "keywords": [
+                              "application IA pour entreprise",
+                              "productivité intelligente",
+                              "assistant IA personnalisé",
+                              "automatisation des tâches",
+                              "gestion optimisée par l’IA",
+                              "solution IA pour PME"
+                        ],
+                        "description": "Chez MAG SERVICES MALI, nous concevons des applications intelligentes et sur mesure, intégrant des modèles d’IA pour automatiser, analyser et assister les activités professionnelles. Ces solutions rendent vos équipes plus efficaces, vos données plus exploitables, et vos décisions plus stratégiques.",
+                        "objectifs": [
+                              "Automatiser les tâches répétitives et chronophages",
+                              "Optimiser la gestion du temps et des priorités",
+                              "Offrir une assistance intelligente à la prise de décision",
+                              "Analyser et valoriser les données internes",
+                              "Améliorer la qualité et la rapidité du travail"
+                        ],
+                        "public_cible": [
+                              "Entreprises de toutes tailles",
+                              "Professionnels indépendants",
+                              "Startups technologiques",
+                              "Administrations cherchant à moderniser leurs processus",
+                              "Cabinets de conseil, comptables, avocats",
+                              "Équipes commerciales et marketing"
+                        ],
+                        "incluses": [
+                              "Analyse des besoins et processus existants",
+                              "Développement d’applications avec IA embarquée",
+                              "Fonctionnalités d’automatisation et d’analyse intelligente",
+                              "Tableaux de bord dynamiques et rapports prédictifs",
+                              "Formation et accompagnement à l’usage des outils IA"
+                        ],
+                        "avantages": [
+                              "Gain de temps et réduction des coûts",
+                              "Amélioration de la qualité de service",
+                              "Productivité accrue sans surcharger les équipes",
+                              "Décisions basées sur les données",
+                              "Adaptation continue grâce à l’IA évolutive"
+                        ]
+                  },
+                  {
+                        "id": 3,
+                        "title": "Applications de Commerce Social & Live Shopping",
+                        "image": "/services/social-commerce.webp",
+                        "hook": "Et si vendre en direct sur mobile devenait votre plus grand canal de vente ?",
+                        "content": "Les Applications de Commerce Social & Live Shopping révolutionnent la manière de vendre en ligne. En combinant le pouvoir des réseaux sociaux, de la vidéo en direct et de l’interaction en temps réel, elles créent une expérience d’achat immersive, engageante et émotionnelle.Ces applications permettent aux marques, créateurs et vendeurs de présenter leurs produits via des vidéos live ou des contenus courts, de répondre aux questions des clients en direct, et de finaliser les ventes instantanément depuis l’application. C’est le mélange parfait entre divertissement, proximité et commerce. Idéal pour stimuler la confiance, réduire les freins à l’achat, et augmenter les conversions.",
+                        "keywords": [
+                              "application live shopping",
+                              "commerce social mobile",
+                              "vente en direct interactif",
+                              "plateforme de vente avec vidéo",
+                              "app e-commerce immersive",
+                              "shopping en direct pour créateurs"
+                        ],
+                        "description": "Chez MAG SERVICES MALI, nous concevons des applications de commerce social sur mesure, intégrant le live streaming, les interactions sociales et les paiements sécurisés. Nos solutions permettent aux marques de se connecter directement à leur audience et de transformer les spectateurs en acheteurs en quelques clics.",
+                        "objectifs": [
+                              "Créer une expérience d’achat interactive et engageante",
+                              "Permettre la vente en direct avec présentation vidéo des produits",
+                              "Favoriser l’achat impulsif grâce à l’interaction en temps réel",
+                              "Connecter les marques directement à leur communauté",
+                              "Stimuler la viralité et le bouche-à-oreille via les réseaux"
+                        ],
+                        "public_cible": [
+                              "Boutiques en ligne et vendeurs indépendants",
+                              "Créateurs de contenus et influenceurs",
+                              "Marques de mode, beauté, électronique, etc.",
+                              "Entreprises souhaitant innover dans la vente",
+                              "Plateformes communautaires avec marketplace",
+                              "Startups e-commerce en quête d’innovation"
+                        ],
+                        "incluses": [
+                              "Fonctionnalité de live streaming intégrée",
+                              "Catalogue produits connecté au direct",
+                              "Système de paiement intégré (mobile money, carte, etc.)",
+                              "Chat en direct, réactions, likes et questions",
+                              "Espace vendeur et statistiques de performance"
+                        ],
+                        "avantages": [
+                              "Taux de conversion plus élevé qu’un site e-commerce classique",
+                              "Lien émotionnel renforcé avec les clients",
+                              "Effet de rareté et d’urgence lors des ventes live",
+                              "Augmentation de la visibilité via le partage social",
+                              "Format adapté aux jeunes générations ultra-connectées"
+                        ]
+                  },
+                  {
+                        "id": 4,
+                        "title": "Applications de Santé Connectée & Bien-être",
+                        "image": "/services/sante-connectee.webp",
+                        "hook": "Et si la technologie pouvait mieux prendre soin de votre santé ?",
+                        "content": "Les Applications de Santé Connectée & Bien-être offrent des solutions numériques innovantes pour surveiller, améliorer et accompagner la santé physique et mentale. Grâce à des capteurs, des notifications intelligentes, des suivis personnalisés et parfois l’intelligence artificielle, elles permettent aux utilisateurs de mieux comprendre leur corps, d’adopter de meilleures habitudes et de rester en contact avec des professionnels de santé.Qu’il s’agisse de suivi médical, de coaching sportif, de bien-être mental ou de gestion de traitements, ces applications facilitent un accompagnement à distance, plus régulier, plus interactif et plus accessible.",
+                        "keywords": [
+                              "application santé mobile",
+                              "suivi médical numérique",
+                              "bien-être connecté",
+                              "coaching santé personnalisé",
+                              "santé digitale",
+                              "télémédecine mobile"
+                        ],
+                        "description": "Chez MAG SERVICES MALI, nous développons des applications mobiles de santé et bien-être sur mesure, qui combinent sécurité, ergonomie et fonctionnalités intelligentes pour accompagner aussi bien les professionnels de santé que les patients ou les particuliers souhaitant améliorer leur hygiène de vie.",
+                        "objectifs": [
+                              "Permettre un suivi de santé personnalisé en temps réel",
+                              "Offrir des outils de prévention et de sensibilisation",
+                              "Faciliter l’accès à la télémédecine et aux conseils médicaux",
+                              "Encourager de meilleures habitudes de vie",
+                              "Suivre des traitements, activités physiques ou programmes bien-être"
+                        ],
+                        "public_cible": [
+                              "Professionnels de santé",
+                              "Centres de santé et cliniques",
+                              "Mutuelles et assureurs",
+                              "Patients atteints de maladies chroniques",
+                              "Sportifs et coachs de bien-être",
+                              "Entreprises proposant des programmes de santé au travail"
+                        ],
+                        "incluses": [
+                              "Interface utilisateur intuitive et accessible",
+                              "Suivi des constantes (activité, sommeil, tension, etc.)",
+                              "Notifications et rappels (médicaments, exercices, rendez-vous)",
+                              "Connexion à des objets connectés (si disponibles)",
+                              "Messagerie sécurisée ou lien vers un professionnel"
+                        ],
+                        "avantages": [
+                              "Prévention et suivi améliorés",
+                              "Meilleure autonomie pour les patients",
+                              "Réduction des déplacements inutiles",
+                              "Promotion du bien-être global",
+                              "Accès élargi aux services de santé, même à distance"
+                        ]
+                  },
+                  {
+                        "id": 5,
+                        "title": "Applications d'Éducation Interactive & Microlearning",
+                        "image": "/services/education-interactive.webp",
+                        "hook": "Apprendre n’a jamais été aussi simple, rapide et engageant.",
+                        "content": "Les Applications d’Éducation Interactive & Microlearning réinventent la manière dont on apprend aujourd’hui. En découpant le savoir en petits modules faciles à assimiler et en intégrant des éléments interactifs (quiz, vidéos, jeux, badges…), elles favorisent une rétention rapide, un apprentissage flexible et une motivation continue.Idéales pour les jeunes, les professionnels ou les apprenants autonomes, ces applications permettent de se former n’importe où, à tout moment, même hors connexion. Grâce à une approche ludique, personnalisée et mobile-first, elles s’adaptent parfaitement aux modes de vie modernes.",
+                        "keywords": [
+                              "application mobile d’apprentissage",
+                              "microlearning francophone",
+                              "plateforme interactive d’éducation",
+                              "formation continue mobile",
+                              "cours en ligne par module",
+                              "application éducative interactive"
+                        ],
+                        "description": "Chez MAG SERVICES MALI, nous concevons des applications éducatives modernes, engageantes et adaptées aux réalités locales. Que ce soit pour l’apprentissage scolaire, la formation professionnelle ou l’éducation religieuse, nos solutions offrent une expérience fluide, captivante et efficace, même sans connexion permanente.",
+                        "objectifs": [
+                              "Offrir un apprentissage flexible et modulaire",
+                              "Augmenter la motivation grâce à l’interaction et la gamification",
+                              "Favoriser la mémorisation par petites séquences régulières",
+                              "Rendre l’éducation accessible à tous, partout",
+                              "Proposer un suivi de progression et des résultats concrets"
+                        ],
+                        "public_cible": [
+                              "Établissements scolaires et universités",
+                              "Centres de formation professionnelle",
+                              "Entreprises et ONG pour la montée en compétences",
+                              "Parents souhaitant renforcer l’apprentissage à la maison",
+                              "Apprenants autodidactes",
+                              "Projets éducatifs en langue locale ou religieuse"
+                        ],
+                        "incluses": [
+                              "Modules courts, interactifs et multimédias",
+                              "Quiz, scores, badges et système de progression",
+                              "Accès hors ligne (avec synchronisation ultérieure)",
+                              "Tableau de bord pour les apprenants et formateurs",
+                              "Possibilité d’ajouter des langues locales ou spécialisées"
+                        ],
+                        "avantages": [
+                              "Apprentissage rapide et motivant",
+                              "Flexibilité totale (mobile, à tout moment)",
+                              "Idéal pour les jeunes et les professionnels",
+                              "Adapté aux contextes africains avec ou sans Internet",
+                              "Évolution possible vers des certifications ou formations diplômantes"
+                        ]
+                  },
+                  {
+                        "id": 6,
+                        "title": "Applications de Services à la Demande (On-Demand)",
+                        "image": "/services/services-on-demand.webp",
+                        "hook": "Et si vos clients pouvaient tout commander en quelques clics ?",
+                        "content": "Les Applications de Services à la Demande permettent aux utilisateurs d’accéder instantanément à des services variés : transport, livraison, ménage, dépannage, coiffure, soins à domicile, etc. Elles connectent l’offre et la demande en temps réel, via des interfaces simples, rapides et efficaces.Inspirées des géants comme Uber, Glovo ou Jumia, ces applications transforment la façon dont les services sont consommés. Elles optimisent l’expérience utilisateur tout en offrant aux prestataires un outil de gestion fluide et une meilleure visibilité de leurs prestations.",
+                        "keywords": [
+                              "application type Uber",
+                              "plateforme de livraison locale",
+                              "services à la demande mobile",
+                              "application réservation artisan",
+                              "application gestion prestataire",
+                              "solution digitale pour services rapides"
+                        ],
+                        "description": "Chez MAG SERVICES MALI, nous concevons des solutions sur mesure pour digitaliser vos services à la demande. Qu’il s’agisse de transport urbain, livraison, soins ou autres prestations, nous développons des applications modernes, fiables et sécurisées, adaptées aux réalités locales et aux exigences de votre marché.",
+                        "objectifs": [
+                              "Permettre aux clients de réserver des services en temps réel",
+                              "Digitaliser et structurer les activités de prestataires",
+                              "Faciliter la mise en relation client-prestataire",
+                              "Assurer un suivi transparent des commandes et paiements",
+                              "Optimiser l’expérience utilisateur et la fidélisation"
+                        ],
+                        "public_cible": [
+                              "Startups de services à la demande",
+                              "Artisans, chauffeurs, livreurs, professionnels indépendants",
+                              "PME proposant des services mobiles",
+                              "Plateformes de soins à domicile",
+                              "Entreprises de nettoyage, dépannage, coiffure, etc.",
+                              "Collectivités ou services publics en recherche de solutions terrain"
+                        ],
+                        "incluses": [
+                              "Application client + interface prestataire",
+                              "Carte interactive et géolocalisation en temps réel",
+                              "Système de réservation, paiement et notation",
+                              "Back-office pour la gestion des services, utilisateurs et commandes",
+                              "Notifications push et historique des transactions"
+                        ],
+                        "avantages": [
+                              "Réactivité et proximité avec les clients",
+                              "Digitalisation simple de services locaux",
+                              "Augmentation de la visibilité et des revenus",
+                              "Suivi complet des prestations",
+                              "Adaptabilité à tout type de service ou secteur"
+                        ]
+                  }
+            ]
       }
 ]

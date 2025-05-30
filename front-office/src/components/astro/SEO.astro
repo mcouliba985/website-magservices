@@ -7,6 +7,10 @@ interface Props {
   type?: 'website' | 'article';
   publishedAt?: string;
   author?: string;
+  serviceType?: string; // 👈 ajouté
+  customJsonLd?: Record<string, any>; // ✅ On ajoute cette ligne
+
+
 }
 
 const {
@@ -17,6 +21,8 @@ const {
   type = 'website',
   publishedAt,
   author = "Mohamed Coulibaly",
+  serviceType,
+
 } = Astro.props;
 ---
 
@@ -75,3 +81,25 @@ const {
   "description": "Sites web performants, responsive, optimisés pour le SEO."
 }
 </script>
+
+{serviceType && (
+  <script type="application/ld+json">
+    {JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": serviceType,
+      "provider": {
+        "@type": "Organization",
+        "name": "MAG SERVICES MALI"
+      },
+      "description": description
+    })}
+  </script>
+)}
+
+
+{Astro.props.customJsonLd && (
+  <script type="application/ld+json">
+    {JSON.stringify(Astro.props.customJsonLd)}
+  </script>
+)}

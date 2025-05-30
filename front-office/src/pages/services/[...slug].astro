@@ -1,0 +1,56 @@
+---
+import SEO from '../../components/astro/SEO.astro';
+import Layout from '../../layouts/main/Layout.astro';
+import services from '../../datas/services.json';
+import BannerCoverPage from '../../components/astro/banner-cover.astro';
+import ServiceTypes from '../../components/react/services-types';
+
+export async function getStaticPaths() {
+      return services.map((service) => ({
+            params: { slug: service.slug?.toString() },
+      }));
+}
+
+const { slug } = Astro.params;
+
+const service = services.find((service) => service.slug === slug);
+
+if (!service) {
+      throw new Error(`Service non trouvé : ${slug}`);
+}
+
+// Définir les métadonnées SEO dynamiquement
+const seoTitle = `${service.title} | Développement web mobile & solutions digitales - MAG SERVICES MALI`;
+const seoDescription = service.hook || service.description?.slice(0, 160);
+const seoImage = service.image || '/icon/MAG-SERVICES-MALI-2.webp';
+const seoUrl = Astro.site + Astro.url.pathname;
+const jsonLd = {
+      '@context': 'https://schema.org',
+      '@type': 'Service',
+      serviceType: service.title,
+      provider: {
+            '@type': 'Organization',
+            name: 'MAG SERVICES MALI',
+            url: 'https://magservicesmali.com',
+      },
+      description: seoDescription,
+};
+---
+
+<!-- ✅ Ajoute le SEO ici -->
+<SEO
+      title={seoTitle}
+      description={seoDescription}
+      image={seoImage}
+      url={seoUrl}
+      type="article"
+      customJsonLd={jsonLd}
+/>
+
+<Layout>
+      <BannerCoverPage title=`Services ${service?.title}` path="nos services" />
+
+      <section>
+            <ServiceTypes client:load service={service} slug={slug} />
+      </section>
+</Layout>
